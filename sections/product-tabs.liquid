@@ -1,0 +1,27 @@
+{{ 'section-product-tabs.css' | asset_url | stylesheet_tag }}
+
+<section class="product-tabs">
+    <div class="product-tabs-content">
+      <div class="product"><span>{{ section.settings.title-1 }}<img src="{{ section.settings.stars | img_url: "master"}}" alt=""></span></div>
+    </div>
+</section>
+  
+{% schema %}
+{
+    "name": "product-tabs",
+    "settings": [
+    {
+        "type": "text",
+        "id": "title-1",
+        "label": "title-1",
+        "default": "100,000 HAPPY CUSTOMERS"
+    }
+    ],
+    "presets": [
+    {
+        "category": "product-tabs",
+        "name": "product-tabs"
+    }
+    ]
+}
+{% endschema %}
