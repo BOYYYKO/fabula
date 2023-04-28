@@ -2,7 +2,10 @@
   "sections": {
     "9e708a25-565a-4eb7-9dde-60d15a8a9b62": {
       "type": "product-tabs",
-      "settings": {}
+      "settings": {
+        "title": "Fabula Fan's Top Picks",
+        "collection": "frontpage"
+      }
     }
   },
   "order": [

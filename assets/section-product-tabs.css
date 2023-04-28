@@ -1,11 +1,12 @@
 .product-tabs {
+    min-width: 375px;
     background: #F7F7F7;
 }
 
 .product-tabs-content {
-    max-width: 1200px;
+    max-width: 1240px;
     white-space: normal;
-    padding: 80px 20px 105px;
+    padding: 80px 20px;
     margin: 0 auto;
     width: 100%;
     overflow: hidden;
@@ -14,6 +15,7 @@
 .product-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 40px;
 }
 
@@ -59,6 +61,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     gap: 8px;
 }
 
@@ -90,8 +93,6 @@ a{
 .image-container{
     display: flex;
     justify-content: center;
-    height: 200px;
-    width: 230px;
 }
 .country-line{
     padding-bottom: 7px;
@@ -148,6 +149,61 @@ a{
 }
 
 .image-container > img {
+    min-width: 147.5px;
     max-width: 100%;
     max-height: 100%;
+}
+
+/* Adaptive start */
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 992px) {
+    .product-header {
+        text-align: center;
+        flex-direction: column;
+    }
+    .tabs-area {
+        justify-content: center;
+    }
+
+    .product{
+        padding: 20px
+    }
+
+    .text-container > h3{
+        font-size: 16px;
+    }
+
+    .text-container > h2{
+        font-size: 22px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 578px) {
+
+    .product-tabs-content{
+        padding: 50px 20px;
+    }
+
+    .title {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .sub-title {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .tabs-area {
+        justify-content: left;
+    }
 }

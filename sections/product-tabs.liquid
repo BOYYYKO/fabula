@@ -1,18 +1,19 @@
 {{ 'section-product-tabs.css' | asset_url | stylesheet_tag }}
+<!-- {{ 'swiper.css' | asset_url | stylesheet_tag }} -->
 
 <section class="product-tabs">
-    <div class="product-tabs-content">
+    <div class="product-tabs-content page-width">
         <div class="product-header">
             <div class="text-area">
                 <span class="sub-title">Best sellers</span>
                 <h3 class="title">{{ section.settings.title }}</h3>
             </div>
-            <div class="tabs-area">
-                <a href="#" class="tab tab-active">Best Sellers</a>
-                <a href="#" class="tab">Flavored</a>
-                <a href="#" class="tab">Decaf</a>
-                <a href="#" class="tab">All coffee</a>
-            </div>
+                <div class="tabs-area">
+                    <a href="#" class="tab tab-active ">Best Sellers</a>
+                    <a href="#" class="tab">Flavored</a>
+                    <a href="#" class="tab">Decaf</a>
+                    <a href="#" class="tab">All coffee</a>
+                </div>
         </div>
         <div class="products">
 
@@ -64,6 +65,7 @@
         </div>
     </div>
 </section>
+<!-- <script src="{{ 'swiper.js' | asset_url }}"></script> -->
   
 {% schema %}
 {
