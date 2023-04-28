@@ -41,6 +41,16 @@
     %}
 
     {% style %}
+      @font-face {
+        font-family: "Europa-Title Bold";
+        src: url({{'Europa-Bold.ttf' | asset_url }}) format("TrueType");
+      }
+
+      @font-face {
+        font-family: "Europa Regular";
+        src: url({{'Europa Regular.ttf' | asset_url }}) format("TrueType");
+      }
+
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
       {{ body_font_bold | font_face: font_display: 'swap' }}
       {{ body_font_italic | font_face: font_display: 'swap' }}
